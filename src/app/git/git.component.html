@@ -1,0 +1,7 @@
+<h1>git follow lists ({{mode}})</h1>
+<div *ngFor="let url of gits">  
+  <!--{{getGitRepo(url)}}-->
+  <git-detail-list [url]="url + '/milestones'"></git-detail-list>
+</div>
+
+<div class="error" *ngIf="errorMessage">{{errorMessage}}</div>
